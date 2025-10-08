@@ -1,0 +1,61 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Geograph";
+  src: url("../fonts/geographwebregular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Geograph", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 420px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  font-family: sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.title-card {
+  font-size: 24px;
+  padding: 10px 10px 0 10px;
+}
+.body-card {
+  padding: 10px;
+}
+.footer-card {
+  background: #6699ff;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  text-align: center;
+}
+.footer-card a {
+  text-decoration: none;
+  color: white;
+}
+.footer-card a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+.body-card img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer; /* 👈 cambia el cursor al pasar por encima */
+}
+
+/* 👇 efecto al pasar el puntero por la imagen */
+.body-card img:hover {
+  transform: scale(1.05); /* agranda solo la imagen */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* agrega sombra */
+}
