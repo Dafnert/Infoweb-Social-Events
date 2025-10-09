@@ -46,7 +46,6 @@ header img {
   height: auto;
 }
 
-/* Estilos del Dropdown */
 .navbar {
   position: relative;
 }
@@ -57,20 +56,20 @@ header img {
 }
 
 .dropdown-btn {
-  background-color: #fff;
-  color: #2c5f2d;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
   padding: 12px 24px;
-  font-size: 16px;
-  font-family: "Geograph", sans-serif;
-  border: none;
+  font-size: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .dropdown-btn:hover {
-  background-color: #e8f5e9;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .dropdown-content {
@@ -78,30 +77,34 @@ header img {
   position: absolute;
   right: 0;
   background-color: #fff;
-  min-width: 250px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  min-width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
   overflow: hidden;
-  margin-top: 5px;
+  margin-top: 10px;
+  z-index: 1000;
 }
 
 .dropdown-content a {
   color: #333;
-  padding: 14px 20px;
+  padding: 15px 20px;
   text-decoration: none;
   display: block;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
 }
 
 .dropdown-content a:hover {
   background-color: #2c5f2d;
   color: #fff;
+  border-left-color: #4caf50;
+  padding-left: 25px;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+  animation: fadeIn 0.3s ease;
 }
-
 .main-content {
   flex: 1;
   max-width: 1200px;
