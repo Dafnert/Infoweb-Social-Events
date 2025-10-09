@@ -1,70 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gestión Sostenible del Agua</title>
-  <link rel="stylesheet" href="../css/water_management.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión Sostenible del Agua</title>
+    <link rel="stylesheet" href="../css/water_management.css" />
+    <script src="../js/dropdown-menu.js" defer></script>
+  </head>
+
   <header>
-    <h1>Gestión Sostenible de los Recursos Hídricos</h1>
-    <img src="../img/hidrico.jpeg" alt="Gestión sostenible del agua">
+    <div class="header-container">
+      <a href="/" class="logo-link">
+        <img src="../img/logo.png" alt="Logo Energía Sostenible" />
+      </a>
+      <nav class="navbar">
+        <div class="dropdown">
+          <button class="dropdown-btn">☰</button>
+          <div class="dropdown-content">
+            <a href="home.html">🏠 Home</a>
+            <a href="pollution-plastics.html">♻️ Contaminación por Plásticos</a>
+            <a href="biodiversity.html">🌿 Biodiversidad</a>
+            <a href="water-resources.html">💧 Recursos Hídricos</a>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <div class="parte1">
-      <h3><strong>¿Qué significa la gestión sostenible del agua?</strong></h3>
-      <p>
-        La gestión sostenible del agua implica garantizar que este recurso vital esté disponible en cantidad y calidad suficientes 
-        para satisfacer las necesidades humanas, agrícolas, industriales y ambientales, sin comprometer su disponibilidad para las generaciones futuras.
-      </p>
-      <p>
-        Esto abarca la protección de fuentes naturales, el uso eficiente, la depuración de aguas residuales y la adaptación 
-        al cambio climático que afecta los ciclos hídricos.
-      </p>
-    </div>
+  <body>
+    <main>
+      <section class="hero-section">
+        <img src="../img/hidrico.jpeg" alt="Gestión sostenible del agua" />
+        <p class="image-description">
+          Gestión sostenible de los recursos hídricos: preservación y uso eficiente del agua.
+        </p>
+      </section>
 
-    <div class="parte2">
-      <h3><strong>Datos y cifras</strong></h3>
-      <p>
-        El 97 % del agua del planeta es salada y solo el 3 % es dulce, de la cual menos del 1 % está disponible para el consumo humano.<br>
-        Más de 2.000 millones de personas viven en países con escasez de agua.<br>
-        El sector agrícola consume aproximadamente el 70 % del agua dulce mundial.<br>
-        Cada año, se vierten en los ríos y mares más de 80 % de las aguas residuales sin tratar.<br>
-        Las sequías son uno de los desastres naturales más destructivos, afectando gravemente la seguridad alimentaria y los ecosistemas.
-      </p>
-    </div>
+      <article class="content-section">
+        <h2>¿Qué significa la gestión sostenible del agua?</h2>
+        <p class="exemple">
+          La gestión sostenible del agua busca garantizar que este recurso esencial esté disponible 
+          en cantidad y calidad suficientes para satisfacer las necesidades humanas, agrícolas, industriales 
+          y ambientales, sin poner en riesgo su disponibilidad futura.
+        </p>
+        <p class="exemple">
+          Involucra proteger las fuentes naturales, reducir el desperdicio, mejorar la eficiencia del uso 
+          y promover la reutilización, asegurando la conservación de los ecosistemas acuáticos.
+        </p>
+      </article>
 
-    <div class="parte3">
-      <h3><strong>Principales amenazas</strong></h3>
-      <img src="../img/sequia.jpg" alt="escasez de agua">
-      <p>
-        El aumento de la población, la contaminación, la sobreexplotación de acuíferos y el cambio climático están reduciendo la 
-        disponibilidad de agua dulce. Muchas regiones ya enfrentan estrés hídrico, afectando tanto a las comunidades como a los ecosistemas.
-      </p>
-    </div>
+      <article class="content-section">
+        <h2>Datos y cifras</h2>
+        <div class="data-section">
+          <p>
+            Solo el 3 % del agua del planeta es dulce, y menos del 1 % está disponible para consumo humano.<br>
+            Más de 2.000 millones de personas viven en países con escasez de agua.<br>
+            La agricultura consume el 70 % del agua dulce disponible a nivel mundial.<br>
+            El 80 % de las aguas residuales se vierten sin tratamiento en el medio ambiente.<br>
+            Las sequías y la contaminación afectan cada vez más la disponibilidad de agua potable.
+          </p>
+        </div>
+      </article>
 
-    <div class="parte4">
-      <h3><strong>Medidas y soluciones sostenibles</strong></h3>
-      <p>
-        <strong>Reutilización del agua:</strong> tratamiento y reciclaje de aguas residuales para riego o uso industrial.<br>
-        <strong>Infraestructura verde:</strong> restauración de humedales y riberas que filtran y almacenan agua naturalmente.<br>
-        <strong>Educación y conciencia:</strong> fomentar el ahorro de agua en hogares, escuelas y empresas.<br>
-        <strong>Tecnologías eficientes:</strong> riego por goteo, sensores de humedad y sistemas de captación de lluvia.<br>
-        <strong>Gestión integrada:</strong> coordinación entre gobiernos, empresas y comunidades locales para la planificación sostenible.<br>
-        <strong>Protección de fuentes:</strong> conservar cuencas hidrográficas, lagos y acuíferos frente a la contaminación.
-      </p>
-    </div>
-  </section>
+      <article class="content-section">
+        <h2>Principales amenazas</h2>
+        <div class="data-section">
+          <img src="../img/sequia.jpg" alt="Escasez de agua" />
+          <p>
+            El cambio climático, la contaminación industrial, la sobreexplotación de ríos y acuíferos, 
+            y el uso ineficiente del agua amenazan la seguridad hídrica.  
+            En muchos lugares, las reservas subterráneas se están agotando más rápido de lo que pueden reponerse.
+          </p>
+        </div>
+      </article>
+
+      <article class="content-section">
+        <h2>Medidas y soluciones sostenibles</h2>
+        <ul class="objectives-list">
+          <li><strong>Uso responsable:</strong> reducir el consumo y evitar fugas domésticas o industriales.</li>
+          <li><strong>Reutilización del agua:</strong> tratamiento y reciclaje de aguas residuales para riego o limpieza.</li>
+          <li><strong>Protección de ecosistemas:</strong> conservar ríos, lagos y humedales.</li>
+          <li><strong>Educación y sensibilización:</strong> campañas para promover el ahorro de agua.</li>
+          <li><strong>Políticas sostenibles:</strong> leyes y planes de gestión integrados a largo plazo.</li>
+          <li><strong>Tecnologías eficientes:</strong> riego por goteo, sensores y sistemas de captación de lluvia.</li>
+        </ul>
+      </article>
+    </main>
+  </body>
+
 
   <footer>
-    <h2>Webgrafía</h2>
-    <p>
-      <a href="https://www.unwater.org/" target="_blank">ONU-Agua</a><br>
-      <a href="https://www.unesco.org/en/water" target="_blank">UNESCO - Programa Hidrológico Internacional</a><br>
-      <a href="https://www.worldbank.org/en/topic/waterresourcesmanagement" target="_blank">Banco Mundial - Gestión de Recursos Hídricos</a>
-    </p>
+    <div class="footer-content">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-wrap: wrap;
+          gap: 20px;
+        "
+      >
+        <div style="flex: 1; min-width: 250px">
+          <h3>Webgrafía</h3>
+          <a
+            href="https://www.miteco.gob.es/es/agua/temas/sistema-espaniol-gestion-agua/gestion_sostenible.html?utm_source=chatgpt.com"
+            target="_blank"
+            rel="noopener"
+          >
+            Gestion de agua 
+          </a>
+          <a
+            href="https://www.xuletas.es/ficha/gestion-sostenible-agua-espana-recursos-desafios-soluciones/?utm_source=chatgpt.com#google_vignette"
+            target="_blank"
+            rel="noopener"
+          >
+            Recursos-desafio-soluciones
+          </a>
+        </div>
+        
+        <div style="text-align: right; min-width: 200px">
+          <h3>Autores</h3>
+          <p style="margin: 5px 0">Dafne Ramírez</p>
+          <p style="margin: 5px 0">Samantha Ponce</p>
+        </div>
+      </div>
+    </div>
   </footer>
-</body>
 </html>
