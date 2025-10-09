@@ -225,7 +225,6 @@ h2 {
   font-size: 20px;
 }
 
-/* FOOTER */
 footer {
   background: linear-gradient(135deg, #2c5f2d 0%, #3a7d3c 100%);
   color: white;
@@ -236,39 +235,23 @@ footer {
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.footer-content > div {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-content > div > div:last-child {
+  text-align: right;
+  min-width: 200px;
+  margin-left: auto; /* Empuja el contenedor hacia la derecha */
 }
 
 footer h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #fff;
-}
-
-footer a {
-  color: #a8d5a8;
-  text-decoration: none;
-  display: block;
-  margin: 8px 0;
-  transition: color 0.3s ease;
-  word-wrap: break-word;
-}
-
-footer {
-  background: linear-gradient(135deg, #2c5f2d 0%, #3a7d3c 100%);
-  color: white;
-  padding: 30px 20px;
-  margin-top: 40px;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-content h2 {
   font-size: 18px;
   margin-bottom: 15px;
   color: #fff;
