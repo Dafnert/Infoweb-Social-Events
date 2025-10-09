@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* Fuente y configuración base */
+@font-face {
+  font-family: "Geograph";
+  src: url("../fonts/geographwebregular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Geograph", sans-serif;
+  line-height: 1.6;
+  color: #1a1a1a;
+  background-color: #f4faff;
+}
+
+/* Encabezado */
+header {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenido principal */
+section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+  color: #0077b6;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+section p {
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+
+section img {
+  display: block;
+  margin: 2rem auto;
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
+}
+
+footer a {
+  color: #a8d8ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  section img {
+    max-width: 90%;
+  }
+}
