@@ -20,7 +20,7 @@ body {
 }
 
 header {
-  background-color: #2c5f2d;
+  background-color: #2c3e50;
   padding: 20px;
   text-align: center;
 }
@@ -41,7 +41,7 @@ header img {
 }
 
 button[name="btn"] {
-  background-color: #4caf50;
+  background-color: #2c3e50;
   color: white;
   padding: 12px 35px;
   font-size: 16px;
@@ -55,15 +55,15 @@ button[name="btn"] {
 }
 button[name="btn"]:hover {
   transform: scale(1.02);
-  box-shadow: 0 12px 40px rgba(76, 175, 80, 0.4);
-  background-color: #45a049;
+  box-shadow: #2b5479;
+  background-color: #476684;
 }
 
 button[name="btn"]:active {
   transform: scale(0.98);
 }
 h2 {
-  color: #2c5f2d;
+  color: #7e9bb8;
   margin-bottom: 20px;
   font-size: 28px;
 }
@@ -93,6 +93,13 @@ h2 {
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
+}
+
+.card-centered {
+  grid-column: 1 / -1;
+  max-width: 420px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .card:hover {
@@ -135,7 +142,7 @@ a {
 }
 
 footer {
-  background-color: #2c5f2d;
+  background-color: #2c3e50;
   color: white;
   padding: 20px;
   text-align: center;
@@ -150,5 +157,9 @@ footer p {
   .cards-container {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .card-centered {
+    max-width: 100%;
   }
 }
